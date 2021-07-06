@@ -19,6 +19,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: center;
 }
 .logo-buscar-copy form {
   display: flex;
@@ -62,8 +63,8 @@ header {
 }
 
 .burger {
-    margin-bottom: 18px;
-    margin-top: 0;
+  margin-bottom: 18px;
+  margin-top: 0;
   background: var(--celeste);
   color: white;
   font-size: 20px;
@@ -223,10 +224,10 @@ footer .copyright {
     align-items: center;
   }
   .logo-buscar-copy a {
-    width: 50%;
+    width: 30%;
   }
   .logo {
-    width: 80%;
+    width: 100%;
   }
   .logo-buscar-copy button {
     width: 15%;
@@ -238,33 +239,54 @@ footer .copyright {
   }
 
   .logo-buscar-copy div {
-    width: 50%;
+    width: 30%;
   }
 
-  .buscar {
-    width: 75%;
+  .logo-buscar-copy .buscar {
+    width: 62%;
     background: #fff;
     height: 40px;
     border: none;
     border-radius: 5px 0 0 5px;
   }
+
+  .logo-buscar-copy .copy {
+    margin-top: 0;
+    width: 37%;
+    margin-right: 19px;
+    font-size: 14px;
+  }
   /* ==== NAV ==== */
   .nav {
-    display: inline-block;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
-    text-align: left;
-    margin: 10px 0 10px 0px;
+    padding-bottom: 10px;
+  }
+  .nav ul {
+    width: 47%;
+    display: flex;
   }
 
-  .nav li {
-    text-align: left;
-    margin-left: 13px;
+  .nav li i {
+    margin: 3px;
   }
 
   .cont-burguer {
     display: none;
   }
-
+  .nav .ofertas-tiendas {
+    justify-content: flex-start;
+  }
+  .nav .ofertas-tiendas li {
+    margin-right: 14px;
+  }
+  .nav .cuenta-login {
+    justify-content: flex-end;
+  }
+  .nav .cuenta-login li {
+    margin-left: 14px;
+  }
   /* ==== MAIN ==== */
   main .articulos {
     display: flex;
@@ -280,13 +302,16 @@ footer .copyright {
   }
 }
 
-@media (min-width: 768px) {
-  /* ==== MAIN ==== */
-  main .articulos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+@media (min-width: 1024px) {
+  .logo-buscar-copy div {
+    width: 32%;
   }
+  .logo-buscar-copy .copy {
+    width: 31%;
+    font-size: 16px;
+  }
+  /* ==== MAIN ==== */
+
   main section article {
     width: 20%;
   }
